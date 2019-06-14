@@ -29,7 +29,7 @@ let express =  require('express'),
 	});
 
 
-router.get('', (req, res) => {
+router.get('/', (req, res) => {
 	UserDao.find().then((users) => {
 		res.render('index', { users: users});
 	})
