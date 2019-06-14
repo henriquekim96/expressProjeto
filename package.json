@@ -1,6 +1,10 @@
 {
   "name": "teste",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.16.0"
+  },
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +19,7 @@
     "express": "^4.17.1",
     "hbs": "^4.0.4",
     "mongoose": "^5.5.14",
-    "multer": "^0.1.8",
+    "multer": "^1.4.1",
     "multer-storage-cloudinary": "^2.2.1",
     "multiparty": "^4.2.1"
   }

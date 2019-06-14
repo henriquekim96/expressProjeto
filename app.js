@@ -8,12 +8,10 @@ let express = require('express'),
 	app = express(),
 
 // Set up mongoose connection
-	dev_db_url = 'mongodb+srv://Admin:123456aaa@db-8wqvt'+
-				'.mongodb.net/test?retryWrites=true&w=majority',
+	dev_db_url = 'mongodb+srv://Admin:123456aaa@db-8wqvt.mongodb.net/test?retryWrites=true&w=majority',
+	mongoDB = process.env.MONGODB_URI || dev_db_url;
 	mongoose = require('mongoose').connect(dev_db_url, {useNewUrlParser:true});
-	/*mongoDB = process.env.MONGODB_URI || 
-				dev_db_url;*/
-
+	
 //mongoose.Promise = global.Promise;
 //const db = mongoose.connection;
 //db.on('error', console.error.bind(console, 'MongoDB connection error:'));
