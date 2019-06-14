@@ -36,6 +36,6 @@ app.use((req, res, next) => {
 
 let port = 1234;
 
-http.createServer(app).listen(port, () => {
+http.createServer(app).listen(process.env.PORT || port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
